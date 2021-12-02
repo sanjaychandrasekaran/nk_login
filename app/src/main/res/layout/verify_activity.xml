@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp">
+
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:text="Verification"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="120dp"
+
+        android:src="@drawable/otp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Please Enter The 4 Digit Code Sent To Example@Gmail.com"
+        android:textColor="#707070"
+        android:textSize="14sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/round_corners_one"
+                android:gravity="center">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="3dp"
+
+                android:background="@drawable/round_corners_one"
+                android:gravity="center">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="3dp"
+
+                android:background="@drawable/round_corners_one"
+                android:gravity="center">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/lasttxt"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="3dp"
+
+                android:background="@drawable/round_corners_one"
+                android:gravity="center">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginRight="10dp"
+            android:letterSpacing="-0.04"
+            android:text="Resend code"
+            android:textColor="#76A220"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="610dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#76A220"
+        android:letterSpacing="0.03"
+        android:text="Verify"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    </RelativeLayout>
